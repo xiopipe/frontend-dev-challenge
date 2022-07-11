@@ -1,0 +1,25 @@
+@use 'Base';
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    h4 {
+        text-align: center;
+        color: Base.$secondary;
+        font-weight: bold;
+        text-shadow: 1px 1px Base.$third ;
+    }
+    img{
+        width: 40%;
+        height: auto;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.info__text{
+    max-width: 320px;
+}

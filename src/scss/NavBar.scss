@@ -1,0 +1,68 @@
+@use 'Base';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.Header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0px 1px 15px black;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+}
+
+.Header__brand{
+    background-image: url("../../public/images/mejorConSalud.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    background-size: 200px
+}
+
+.Header__icon {
+    cursor: pointer;
+}
+
+.Header__icon-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: white;
+
+    position: fixed;
+
+    width: 230px;
+    height:350px;
+    left: 0p;
+    top: 3em;
+}
+
+.Header__icon-menu ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.Header__icon-menu hr{
+    border-top: 1px solid black;
+    margin: 2px;
+}
+.Header__icon-titles {
+    color: Base.$primary;
+    font-weight: bold;
+}
+
+.Header__icon-menu li:hover {
+    background-color: Base.$third;
+}
+
+@include media-breakpoint-down(sm){
+    .Header__icon-menu {
+        height:900px;
+        width: 380px;
+    }
+    .Header__icon-menu li{
+        font-size: 30px;
+    }
+    .Header__icon-titles {
+        font-size: 30px;
+    }
+}

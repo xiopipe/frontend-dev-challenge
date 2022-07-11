@@ -1,0 +1,37 @@
+@use 'Base';
+
+
+.slider {
+  justify-content: center;
+  display: flex;
+}
+.testimony{
+ font-family: sans-serif;
+ margin: auto;
+ background-color: white;
+ max-width: 800px;
+ width: 100%;
+}
+
+.testimony__quote{
+    color: Base.$secondary;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.testimony__text {
+  font-style: italic;
+  text-align: center;
+}
+
+.testimony__user {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px
+}
+.bi-dot {
+  cursor: pointer;
+  font-size: 40px;
+}
+

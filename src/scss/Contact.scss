@@ -1,0 +1,49 @@
+@use "Base";
+
+.contact {
+  padding-top: 8px;
+  margin-top: 20px;
+  h4 {
+    text-align: center;
+    color: Base.$fourth;
+    font-weight: bold;
+    text-shadow: 1px 1px Base.$third;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  input {
+    width: 100%;
+    margin: 8px 0px 8px 0px;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    border: solid 2px Base.$fourth;
+    outline: none;
+  }
+  textarea {
+    width: 100%;
+    margin: 8px 0px 8px 0px;
+    padding: 8px;
+    height: 180px;
+    border: solid 2px Base.$fourth;
+    border-radius: 14px;
+    outline: none;
+  }
+  button {
+    background-color: Base.$fourth;
+    border-radius: 14px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    border: none;
+  }
+  button:hover {
+    background-color: Base.$secondary;
+  }
+
+}

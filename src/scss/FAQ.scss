@@ -1,0 +1,43 @@
+@use "Base";
+
+.FAQ {
+
+    padding-top: 8px;
+    margin-top: 8px;
+
+    h4 {
+        color: Base.$secondary;
+        font-weight: bold;
+        text-shadow: 1px 1px Base.$third ;
+    }
+
+    ul {
+        padding: 0px 0px 0px 0px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    li {
+        font-weight: bold;
+        
+    }
+    hr {
+        border-top: 2px dashed black;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+    }
+}
+
+.FAQ__question{
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 8px;
+}
+
+.FAQ__answer{
+    font-weight: lighter;
+    padding-bottom: 8px;
+}
